@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <title>Instagram-like Page</title>
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-300 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-semibold">Instagram</div>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-600">Home</a>
+          <a href="#" class="text-gray-600">Explore</a>
+          <a href="#" class="text-gray-600">Notifications</a>
+          <a href="#" class="text-gray-600">Profile</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-4 flex flex-wrap">
+      <!-- Left Sidebar -->
+      <div class="w-full md:w-1/2 lg:w-1/4">
+        <!-- Profile Image and Info -->
+        <div class="flex items-center space-x-4 p-4">
+          <img
+            src="https://placekitten.com/200/200"
+            alt="Profile"
+            class="w-12 h-12 rounded-full"
+          />
+          <div>
+            <div class="font-semibold">Your Name</div>
+            <div class="text-gray-600">username</div>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="space-y-2 p-4">
+          <a href="#" class="block text-gray-600">Posts</a>
+          <a href="#" class="block text-gray-600">IGTV</a>
+          <a href="#" class="block text-gray-600">Saved</a>
+        </div>
+      </div>
+
+      <!-- Main Feed -->
+      <div class="w-full md:w-1/2 lg:w-1/2">
+        <!-- Sample Post -->
+        <div class="bg-white border border-gray-300 rounded mb-4">
+          <!-- Post Header -->
+          <div class="flex items-center p-4">
+            <img
+              src="https://placekitten.com/40/40"
+              alt="Profile"
+              class="w-8 h-8 rounded-full"
+            />
+            <div class="ml-2">
+              <div class="font-semibold">Post Author</div>
+              <div class="text-gray-600">Location</div>
+            </div>
+          </div>
+
+          <!-- Post Image -->
+          <img
+            src="https://placekitten.com/600/400"
+            alt="Post"
+            class="w-full h-64 object-cover"
+          />
+
+          <!-- Post Actions -->
+          <div class="flex items-center justify-between p-4">
+            <div class="flex space-x-4">
+              <button class="flex items-center space-x-1">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  ></path>
+                </svg>
+                <span>Like</span>
+              </button>
+              <button class="flex items-center space-x-1">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span>Comment</span>
+              </button>
+              <button class="flex items-center space-x-1">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 3a2 2 0 012-2h10a2 2 0 012 2v18l-7-3-7 3V3z"
+                  ></path>
+                </svg>
+                <span>Save</span>
+              </button>
+            </div>
+            <button class="flex items-center space-x-1">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="w-full lg:w-1/4">
+        <!-- Sample Stories -->
+        <div class="bg-white border border-gray-300 rounded mb-4 p-4">
+          <div class="font-semibold mb-2">Stories</div>
+          <div class="flex space-x-2">
+            <div class="w-12 h-12 rounded-full overflow-hidden">
+              <img
+                src="https://placekitten.com/100/100"
+                alt="Story"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <!-- Add more story items as needed -->
+          </div>
+        </div>
+
+        <!-- Suggested Accounts -->
+        <div class="bg-white border border-gray-300 rounded p-4">
+          <div class="font-semibold mb-2">Suggestions For You</div>
+          <!-- Sample Suggested Account -->
+          <div class="flex items-center space-x-4">
+            <div class="w-8 h-8 rounded-full overflow-hidden">
+              <img
+                src="https://placekitten.com/80/80"
+                alt="Suggested Account"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="font-semibold">Suggested User</div>
+              <div class="text-gray-600">Follows you</div>
+            </div>
+          </div>
+          <!-- Add more suggested accounts as needed -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
